@@ -5,12 +5,15 @@ The Voice-Based Concept Understanding Analyzer is an AI-based web application th
 
 ---
 
-## 🚀 Features
-- Text / Voice simulation input
-- Concept understanding analysis
-- Automatic scoring system (Strong / Moderate / Weak)
-- Interactive Streamlit web interface
-- PDF report generation
+## Features
+
+- 🎤 User response input (Text/Voice Simulation)
+- 🧠 Concept understanding analysis
+- 📊 Automatic scoring (Strong / Moderate / Needs Improvement)
+- 💬 Instant feedback generation
+- 📄 Downloadable PDF report
+- 🌐 Interactive Streamlit web interface
+- 📁 Simple and user-friendly interface
 
 ---
 

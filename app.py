@@ -7,7 +7,6 @@ st.title("🎤 Voice-Based Concept Understanding Analyzer")
 
 st.write("Enter spoken text (or simulate voice output)")
 
-text = st.text_input("User Response:")
 
 # ---------------- PDF FUNCTION ----------------
 def create_pdf(user_text, result):

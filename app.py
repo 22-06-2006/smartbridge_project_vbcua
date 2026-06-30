@@ -5,16 +5,41 @@ from reportlab.pdfgen import canvas
 
 st.title("🎤 Voice-Based Concept Understanding Analyzer")
 
-st.write("Enter spoken text (or simulate voice output)")
+st.write("Upload voice or type text")
 
+text = ""
 
-# ---------------- PDF FUNCTION ----------------
+# ---------------- VOICE INPUT ----------------
+audio_file = st.file_uploader("🎤 Upload Voice (.wav)", type=["wav"])
+
+if audio_file is not None:
+    import speech_recognition as sr
+
+    r = sr.Recognizer()
+
+    with sr.AudioFile(audio_file) as source:
+        audio = r.record(source)
+
+    try:
+        text = r.recognize_google(audio)
+        st.success("Voice Converted Text:")
+        st.write(text)
+    except:
+        st.error("Could not understand audio")
+
+# ---------------- TEXT INPUT ----------------
+typed_text = st.text_input("Or Type Text Here")
+
+if typed_text:
+    text = typed_text
+
+# ---------------- PDF ----------------
 def create_pdf(user_text, result):
     buffer = io.BytesIO()
 
     c = canvas.Canvas(buffer, pagesize=letter)
     c.drawString(100, 750, "Voice-Based Concept Understanding Report")
-    c.drawString(100, 700, f"User Input: {user_text}")
+    c.drawString(100, 700, f"Input: {user_text}")
     c.drawString(100, 650, f"Result: {result}")
 
     c.save()
@@ -22,33 +47,32 @@ def create_pdf(user_text, result):
 
     return buffer
 
-# ---------------- ANALYZE BUTTON ----------------
+# ---------------- ANALYZE ----------------
 if st.button("Analyze Understanding"):
 
     if text:
+
         text_low = text.lower()
 
         if "machine learning" in text_low:
-            result = "90/100 - Strong Understanding 👍"
-            st.success(result)
+            result = "90/100 - Strong 👍"
 
-        elif "ai" in text_low or "artificial intelligence" in text_low:
-            result = "70/100 - Moderate Understanding 🙂"
-            st.info(result)
+        elif "ai" in text_low:
+            result = "70/100 - Moderate 🙂"
 
         else:
             result = "40/100 - Needs Improvement ⚠️"
-            st.warning(result)
 
-        # ---------------- PDF GENERATION ----------------
+        st.success(result)
+
         pdf_file = create_pdf(text, result)
 
         st.download_button(
-            label="📄 Download PDF Report",
+            label="📄 Download PDF",
             data=pdf_file,
             file_name="report.pdf",
             mime="application/pdf"
         )
 
     else:
-        st.error("Please enter text first")
+        st.error("Please provide input")

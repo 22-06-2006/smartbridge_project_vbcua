@@ -1,4 +1,5 @@
 streamlit 
 reportlab
-SpeechRecognition
-pydub
+openai-whisper
+torch
+ffmpeg-python

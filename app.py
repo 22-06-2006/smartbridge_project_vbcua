@@ -22,10 +22,14 @@ model = load_model()
 # ---------------- VOICE TO TEXT ----------------
 if audio_file is not None:
 
-    with open("temp_audio.wav", "wb") as f:
-        f.write(audio_file.read())
+    file_extension = audio_file.name.split(".")[-1]
 
-    result = model.transcribe("temp_audio.wav")
+    audio_path = f"temp_audio.{file_extension}"
+
+    with open(audio_path, "wb") as f:
+        f.write(audio_file.getbuffer())
+
+    result = model.transcribe(audio_path)
     text = result["text"]
 
     st.success("Transcribed Text:")

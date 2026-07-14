@@ -50,7 +50,13 @@ User Input → Analysis → Score Generation → PDF Download
 # Home Page :
 <img width="1901" height="1026" alt="14210" src="https://github.com/user-attachments/assets/dd3fb08b-312b-47a3-bb98-4e81c78b62f5" />
 
+# Audio Upload: 
+<img width="1917" height="1077" alt="24210" src="https://github.com/user-attachments/assets/32a6e095-e7f2-4158-8069-574c414ca1d6" />
 
+# Ai Analysis :
+<img width="1902" height="1027" alt="44210" src="https://github.com/user-attachments/assets/22f4044a-08ca-47d7-87d2-3b377d8e7261" />
 
 ## 🎯 Outcome
 This project helps evaluate conceptual understanding and improves communication skills through automated feedback and reporting.
+<img width="1902" height="1031" alt="54210" src="https://github.com/user-attachments/assets/0efeb3a5-8339-4660-8fde-281e4bfb935f" />
+

@@ -1,4 +1,4 @@
-LIVE PROJECT DEMO : https://smartbridgeprojectvbcua-cmou64vwsmw4hbarnqtdot.streamlit.app
+LIVE PROJECT DEMO [ Streamlit App] : https://smartbridgeprojectvbcua-cmou64vwsmw4hbarnqtdot.streamlit.app
 
 
 # 🎙️ Voice-Based Concept Understanding Analyzer

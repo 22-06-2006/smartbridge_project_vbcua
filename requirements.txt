@@ -1,6 +1,0 @@
-streamlit 
-reportlab
-openai-whisper
-torch
-numpy
-ffmpeg-python

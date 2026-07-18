@@ -14,14 +14,14 @@
 
 import streamlit as st
 
-from src.speech_to_text import SpeechToText
-from src.semantic_analysis import SemanticAnalyzer
-from src.audio_features import AudioFeatures
-from src.scoring import ScoringEngine
-from src.pdf_report import PDFReport
-from src.audio_visualizer import AudioVisualizer
+from speech_to_text import SpeechToText
+from semantic_analysis import SemanticAnalyzer
+from audio_features import AudioFeatures
+from scoring import ScoringEngine
+from pdf_report import PDFReport
+from audio_visualizer import AudioVisualizer
 
-from src.ui import (
+from ui import (
     show_header,
     show_sidebar,
     show_transcript,
@@ -32,7 +32,7 @@ from src.ui import (
     show_footer
 )
 
-from src.utils import (
+from utils import (
     validate_audio,
     delete_temp_file
 )

@@ -1,3 +1,6 @@
+LIVE PROJECT DEMO : https://smartbridgeprojectvbcua-cmou64vwsmw4hbarnqtdot.streamlit.app
+
+
 # 🎙️ Voice-Based Concept Understanding Analyzer
 
 An AI-powered web application that evaluates a student's conceptual understanding by analyzing spoken explanations. The system converts speech to text, compares the explanation with reference concepts using semantic similarity, analyzes voice features, and generates an automated evaluation report.

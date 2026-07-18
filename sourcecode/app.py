@@ -3,9 +3,9 @@
 # Main Application
 #
 # Developed by:
-# varshini
-# B.Tech CSE 
-# Ramachandra college of engineering
+# Danturthi Venkata Satya Mythili Ramani
+# B.Tech AIML
+# Aditya College Of Engineering And Technology
 # ==========================================================
 
 # ==========================================================
